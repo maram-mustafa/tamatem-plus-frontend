@@ -1,0 +1,274 @@
+/* .edit-details-box {
+    width: 70%;
+    margin: 2% auto;
+    padding:40px
+  }
+
+  .edit-title {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    color: #292c51 !important;
+    margin-left:9% !important
+  }
+
+  .edit-card {
+    position: relative;
+    width: 100% !important;
+    height: 550px;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; 
+    margin: 20px auto 40px;
+    padding: 30px;
+    max-width: 800px;
+  }
+
+
+  .form-label-color{
+    color: #4a4e8a;
+    font-weight: bold;
+  }
+
+  .edit-input{
+    color: blue.500 m !important;
+    background-color: #edeef1 !important; 
+    width:100%;
+    border-radius: 12px;
+
+  }
+
+  .cancle-changes-button {
+    background-color: #919194 !important;
+    color: white  !important;
+    width: 200px  !important;
+    border-radius: 30px !important;
+    transition: 0.3s ease, box-shadow 0.3s ease !important;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5)!important; 
+    margin-right: 3%  !important;
+}
+
+.cancle-changes-button:hover {
+    background-color: #a3a3a6 !important;
+    box-shadow: 0px 12px 30px rgba(255, 255, 255, 0.8);
+}
+
+.cancle-changes-button:active {
+    transform: translateY(1px); 
+    box-shadow: none;
+}
+
+.save-changes-button{
+    background-color: #00805a!important;
+    color: white!important;
+    border-radius: 30px !important;
+    width: 200px !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5)!important; 
+}
+
+.save-changes-button:hover {
+    background-color: #028a61 !important; 
+    box-shadow: 0px 12px 30px rgba(255, 255, 255, 0.8);
+}
+
+.save-changes-button:active {
+    transform: translateY(1px); 
+    box-shadow: none;
+}
+
+.image-input-container {
+    position: relative;
+    width: fit-content;
+}
+
+.image-input {
+    position: relative;
+    height: 100px !important;
+    border-style:dashed  !important;
+    background-color: #edeef1 !important; 
+    width:100%;
+    border-radius: 12px;  
+    border-width: 2px !important;
+    border-color: #cccdd3 !important; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.select-image-button {
+    position: absolute !important;
+    right: 40% !important;
+    top: 60% !important;
+    transform: translateY(-50%) !important;
+    background-color: white !important;
+    color: #292c51 !important;
+    border: none !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    cursor: pointer !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    width: 25%;
+    height: 25px !important;
+}
+
+.select-image-button:active {
+    transform: translateY(1px) !important; 
+    box-shadow: none;
+}
+
+
+.image-preview {
+    max-width: 100%; 
+    max-height: 100%; 
+    overflow: hidden;
+} */
+
+
+
+.edit-details-box {
+    width: 70%;
+    margin: 2% auto;
+    padding: 40px;
+  }
+  
+  .edit-title {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    color: #292c51 !important;
+    margin-left: 9% !important;
+  }
+  
+  .edit-card {
+    position: relative;
+    width: 100% !important;
+    height: auto; /* Adjust height to auto for responsiveness */
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    margin: 20px auto 40px;
+    padding: 30px;
+    max-width: 800px;
+  }
+  
+  .form-label-color {
+    color: #4a4e8a;
+    font-weight: bold;
+  }
+  
+  .edit-input {
+    color: blue.500 m !important;
+    background-color: #edeef1 !important;
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .cancle-changes-button,
+  .save-changes-button {
+    background-color: #919194 !important;
+    color: white !important;
+    border-radius: 30px !important;
+    width: 200px !important;
+    transition: 0.3s ease, box-shadow 0.3s ease !important;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5)!important;
+    margin-right: 3% !important;
+    font-size: 14px; /* Adjust font size for better readability */
+    padding: 12px 24px; /* Adjust padding for better spacing */
+  }
+  
+
+ .save-changes-button:hover {
+    background-color: #028a61 !important; 
+    box-shadow: 0px 12px 30px rgba(255, 255, 255, 0.8);
+}
+
+  
+  .cancle-changes-button:active,
+  .save-changes-button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  .save-changes-button {
+    background-color: #00805a !important;
+  }
+  
+  .cancle-changes-button:hover {
+    background-color: #a3a3a6 !important;
+    box-shadow: 0px 12px 30px rgba(255, 255, 255, 0.8);
+}
+  
+  .image-input-container {
+    position: relative;
+    width: fit-content;
+  }
+  
+  .image-input {
+    position: relative;
+    height: 100px !important;
+    border-style: dashed !important;
+    background-color: #edeef1 !important;
+    width: 100%;
+    border-radius: 12px;
+    border-width: 2px !important;
+    border-color: #cccdd3 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .select-image-button {
+    position: absolute !important;
+    right: 40% !important;
+    top: 60% !important;
+    transform: translateY(-50%) !important;
+    background-color: white !important;
+    color: #292c51 !important;
+    border: none !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    cursor: pointer !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    width: 25%;
+    height: 25px !important;
+  }
+  
+  .select-image-button:active {
+    transform: translateY(1px) !important;
+    box-shadow: none;
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .edit-details-box {
+      width: 80%;
+      padding: 20px;
+    }
+  
+    .edit-title {
+      margin-left: 5% !important;
+    }
+  
+    .select-image-button {
+      right: 30% !important;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .edit-details-box {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .edit-title {
+      margin-left: 2% !important;
+    }
+  
+    .select-image-button {
+      right: 20% !important;
+    }
+  }
