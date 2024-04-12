@@ -15,7 +15,28 @@ const EditProduct = () => {
     const [loading, setLoading] = useState(true);
     const [imageFile, setImageFile] = useState(null);
 
-    console.log(image, '1')
+
+    useEffect(() => {
+        const fetchProductDetails = async () => {
+            setLoading(true);
+            try {
+                const accessToken = localStorage.getItem('accessToken');
+                const headers = {
+                    Authorization: `Bearer ${accessToken}`
+                };
+                const response = await axios.get(`http://127.0.0.1:8000/api/v1/products/${id}/`, { headers });
+                setName(response.data.name);
+                setDescription(response.data.description);
+                setImage(response.data.image);
+                setPrice(response.data.price);
+            } catch (error) {
+                console.error('Error fetching product details:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchProductDetails();
+    }, [id]);
 
     
     const handleCancelButton = () => {
@@ -23,9 +44,6 @@ const EditProduct = () => {
     };
 
     const handleSaveButton = async () => {
-        console.log(image, 'save')
-
-        debugger
         try {
             const accessToken = localStorage.getItem('accessToken');
             const headers = {
@@ -44,13 +62,12 @@ const EditProduct = () => {
             alert("Changes saved successfully!");
             navigate(`/products`);
         } catch (error) {
-            console.error('Error saving changes:', error);
+            alert('Error saving changes:', error);
         }
     };
 
 
     const handleImageChange = (e) => {
-        debugger
         const file = e.target.files[0];
         if (file) {
             setImageFile(file);
@@ -60,34 +77,7 @@ const EditProduct = () => {
             };
             reader.readAsDataURL(file);
         }
-        console.log(image, 'image change')
-
     };
-
-
-    useEffect(() => {
-        const fetchProductDetails = async () => {
-            setLoading(true);
-            try {
-                const accessToken = localStorage.getItem('accessToken');
-                const headers = {
-                    Authorization: `Bearer ${accessToken}`
-                };
-                const response = await axios.get(`http://127.0.0.1:8000/api/v1/products/${id}/`, { headers });
-                setName(response.data.name);
-                setDescription(response.data.description);
-                setImage(response.data.image);
-                setPrice(response.data.price);
-                console.log(image, 'use effect')
-
-            } catch (error) {
-                console.error('Error fetching product details:', error);
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchProductDetails();
-    }, [id]);
 
 
     return (

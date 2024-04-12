@@ -1,5 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react';
-import { Box, Input, Button, Link, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Input, Button, Link, Flex, Text } from "@chakra-ui/react";
 import { useState } from 'react';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import '../../Styles/Login.css';
@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import logoSvg from '../../images/logo.svg';
 
 
-const LoginPage = ({  }) => {
+const LoginPage = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

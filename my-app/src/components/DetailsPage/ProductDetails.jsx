@@ -27,10 +27,10 @@ const ProductDetails = () => {
         const response = await axios.get(`http://127.0.0.1:8000/api/v1/products/${id}/`, { headers });
         setProduct(response.data);
       } catch (error) {
-        console.error('Error fetching product details:', error);
+        alert('Error fetching product details:', error);
       }
     };
-
+    
     fetchProductDetails();
   }, [id]);
   

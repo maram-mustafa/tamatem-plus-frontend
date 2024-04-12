@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, CardFooter, Button, Image, Stack, Heading, Text } from '@chakra-ui/react';
+import { Card, CardBody, Button, Image, Heading } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 const ProductCard = ({ id, image, name, price }) => {
